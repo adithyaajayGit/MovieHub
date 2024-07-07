@@ -8,9 +8,9 @@
 </head>
 <body class="text-gray-600 font-body">
 <body> 
-    <div> <!-- content wrapper -->
+    <div class="grid md:grid-cols-3"> <!-- content wrapper -->
 
-       <div>
+       <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">  
@@ -37,7 +37,7 @@
             </nav>
        </div> <!--end nav-->
 
-       <main class="px-16 py-6 bg-gray-100">
+       <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
             <a href="#" class="text-primary">Log in</a>
             <a href="#" class="text-primary ml-2">sign up</a>
@@ -52,16 +52,39 @@
        <div>
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Hollywood Movies</h4>
 
-        <div class="mt-8">
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+
             <!-- cards go here -->
-             <div class="bg-white rounded overflow-hidden shadow-md relative">
+             <div class="card">
                 <img src="./img/dune.jpeg" alt="" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4">
                     <span class="font-bold">DUNE PART 2</span>
-                    <span class="block text-gray-500 text-sm">directed by dd </span>
+                    <span class="block text-gray-500 text-sm">directed by Denis Villeneuve </span>
                 </div>
-                <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+                <div class="badge">
                     <span >2hr 30 min</span>
+                </div>
+             </div>
+
+             <div class="card">
+                <img src="./img/avathar.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">Avathar 2</span>
+                    <span class="block text-gray-500 text-sm">directed by James Cameroon </span>
+                </div>
+                <div class="badge">
+                    <span >2hr 45 min</span>
+                </div>
+             </div>
+
+             <div class="card">
+                <img src="./img/godzilla.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">Kong vs godzilla</span>
+                    <span class="block text-gray-500 text-sm">directed by Adam Wingard </span>
+                </div>
+                <div class="badge">
+                    <span >2hr 02 min</span>
                 </div>
              </div>
             
